@@ -6,11 +6,15 @@ function isValid (exp) {
 
   let stack = new Stack();
 
+  let matchingChars;
+  const openingChars = ['(', '{', '['];
+  const closingChars = [')', '}', ']'];
+
   for (let i = 0; i < exp.length; i++) {
-    if (exp[i] === '(') {
+    if (exp[i] === openingChars) {
       stack.push(exp[i]);
     }
-    else if (exp[i] === ')') {
+    else if (exp[i] === closingChars) {
       if (stack.top === null) {
         throw new Error('Unmatched closing parentheis at position: ' + i);
       } else {
