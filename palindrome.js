@@ -4,21 +4,6 @@ const Stack = require('./stack');
 
 function is_palindrome(string) {
 
-  function display(stack) {
-    if (stack.top === null) {
-      throw new Error('The stack is empty');
-      // Throw an error if the stack is empty!
-    }
-
-    let currentNode = stack.top;
-    let data = '';
-    while(currentNode) {
-      data += `=> ${currentNode.data} `;
-      currentNode = currentNode.next;
-    }
-    return console.log('CURRENT STACK', data);
-  }
-
   let stack = new Stack();
   let chars = '';
   string = string.toLowerCase().replace(/[^a-zA-Z0-9]/g, '');
