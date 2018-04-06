@@ -29,7 +29,6 @@ const main = (function () {
   }
 
   let stack = new Stack;
-  // Kirk, Spock, McCoy, Scotty
   stack.push('Kirk');
   stack.push('Spock');
   stack.push('McCoy');
