@@ -28,6 +28,7 @@ class Stack {
     this.top = node.next;
     return node.data;
   }
+
 }
 
 module.exports = Stack;
