@@ -18,7 +18,7 @@ function isValid (exp) {
       }
     }
   }
-  return console.log('Expression has matching parenthesis');
+  return console.log('The expression is valid');
 }
 
 isValid(
